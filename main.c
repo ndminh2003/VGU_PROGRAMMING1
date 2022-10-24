@@ -24,7 +24,7 @@ unsigned char *sub_image(unsigned char *image1, unsigned char *image2, unsigned 
                 {
                     temp = image2[i * width * channel + j * channel + k] - image1[i * width * channel + j * channel + k];
                     temp = abs(temp);
-                    if ((temp<10)) {
+                    if ((temp<35)) {
                         temp_array[i * width * channel + j * channel + k] = image2[i * width * channel + j * channel + k];
                     }
                 }
